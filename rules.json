@@ -1,0 +1,22 @@
+{
+    "properties": {
+        "namespace": { "type": "string" },
+        "type": { "type": "string" },
+        "name": { "type": "string"},
+        "fields": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "name": { "type": "string"},
+                    "doc": { "type": "string"},
+                    "default":{ "not": { "type": "null" } } 
+                },
+                "required": [ "type", "name", "doc"]
+            }
+        }
+    },
+                
+    "required": ["namespace", "type", "name", "fields", "doc"]
+}
+
