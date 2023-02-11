@@ -7,9 +7,9 @@
 
 **Docker Approach**
 - docker run -d -it -v /<schema folder>:/opt/app/schemas/  <imageName>
-- To buid Image and use: docker build -t appimages.bin.t-mobile.at/tauplatform/tauplatform:\$MAGENTA_GIT_HASH --network=host ./platform/.
-- To use existing Image: docker pull appimages.bin.t-mobile.at/schemavalidatortool/schemavalidatortool:latest
-- To modify and push Image :docker push appimages.bin.t-mobile.at/schemavalidatortool/schemavalidatortool:latest
+- To buid Image and use: docker build -t <imageName>
+- To use existing Image: docker pull <imageName>:latest
+- To modify and push Image :docker push <imageName>:latest
 
 **Validating multiple Schema**
 - sh doSchemaValidation.sh <Directory_Path_Where_All_Schema_Are_Available> <output_file>
@@ -41,11 +41,7 @@
 **Limitation**
 - This package JSON-SCHcan be used by python 2.7, 3.3 and pypi.
 
-**GIT Repo for existing Schemas**
-- https://git.dev.t-mobile.at/tma/kafka-schemas
 
-**Confluence**
-- https://conf.magenta.at/pages/viewpage.action?pageId=268143140
 
 
 
