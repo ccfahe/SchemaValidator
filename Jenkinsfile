@@ -15,8 +15,8 @@ builder
   .withResponsibilityMapping()
   .withCommonProperties()
   .withPrepareStage()
-  .withShellStage('docker build -t appimages.bin.t-mobile.at/schemavalidatortool/schemavalidatortool:latest --network=host .')
-  .withShellStage('docker push appimages.bin.t-mobile.at/schemavalidatortool/schemavalidatortool:latest')
+  .withShellStage('docker build -t schemavalidatortool/schemavalidatortool:latest --network=host .')
+  .withShellStage('docker push schemavalidatortool/schemavalidatortool:latest')
 
 
 builder.build().execute()
